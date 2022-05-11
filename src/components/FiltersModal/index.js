@@ -1,0 +1,1 @@
+export {FiltersModal as default} from './FiltersModal';

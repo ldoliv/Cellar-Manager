@@ -1,0 +1,19 @@
+
+
+Usar codigo do SIGER
+
+
+- save to local storage
+
+- list view
+	- add new beer/wine
+	- sorting
+		- by name
+		- by year
+	- filtering
+		- by year
+
+- detail view
+	- add/edit comments
+	- add/edit rating
+
