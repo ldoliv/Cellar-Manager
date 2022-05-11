@@ -1,6 +1,6 @@
 
 import {config} from 'config';
-import {unique, slugifyy} from 'helpers';
+import {unique} from 'helpers';
 import prodJSON from 'data/products.json';
 import uuid from 'react-uuid';
 
@@ -34,11 +34,6 @@ const setFilters = (prefs) => {
 }
 
 // -------------------------------------------------------------------------
-
-const getProductBySlug = (slug) => {
-	const products = getProducts();
-	return products.find(prod => slugifyy(prod.name) === slug);
-}
 
 const getProductByID = (id) => {
 	const products = getProducts();
@@ -118,7 +113,6 @@ export const store = {
 	getFilters,
 	setFilters,
 
-	getProductBySlug,
 	getProductByID,
 	getProducts,
 	getProductYears,

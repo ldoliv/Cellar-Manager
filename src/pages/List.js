@@ -2,7 +2,6 @@ import {useState} from "react"
 import {NavLink, useNavigate} from 'react-router-dom';
 import store from "store";
 import FilterBar from "components/FilterBar";
-import {slugifyy} from "helpers";
 
 
 /*
@@ -37,7 +36,6 @@ export function List() {
 	}
 
 	function handleProdClick(prod) {
-		// const slug = slugifyy(prod.name);
 		const id = prod.id;
 		navigate(id);
 	}
@@ -72,16 +70,22 @@ export function List() {
 		const direction = filters['direction'] ? filters['direction'].value : 'ascending';
 
 		filtered.sort((a, b) => {
-			const valA = a[orderBy].toLowerCase();
-			const valB = b[orderBy].toLowerCase();
+			const valA = a[orderBy];
+			const valB = b[orderBy];
 
-			// return (valA < valB) ? -1 : ((valA > valB) ? 1 : 0);
-			return valA.localeCompare(valB);
+			// If dealing with numbers
+			if (!isNaN(valA) && !isNaN(valB)) {
+				return parseInt(valA) - parseInt(valB);
+
+				// if dealing with strings
+			} else {
+				// return (valA < valB) ? -1 : ((valA > valB) ? 1 : 0);
+				return valA.toLowerCase().localeCompare(valB.toLowerCase());
+			}
+
 		})
 		if (direction !== 'ascending') filtered.reverse();
-
 		return filtered;
-
 	})();
 
 

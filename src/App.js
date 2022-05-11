@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/style.scss';
 
 import {Routes, Route} from 'react-router-dom';
-import {List, Detail} from 'pages';
 import {DefaultLayout} from 'layouts/Default';
+import {List, Detail} from 'pages';
 
 
 function App() {

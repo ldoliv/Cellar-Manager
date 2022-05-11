@@ -80,21 +80,21 @@ export function FiltersModal(props) {
 		setFieldVals(newFieldVals);
 	}
 
-	function toggleCheckAll(field) {
+	// function toggleCheckAll(field) {
 
-		const {name, values} = field;
-		const newFieldVals = {...fieldVals};
-		const currFieldVals = fieldVals[name].value;
-		const allFieldValues = values.map(obj => obj.value);
+	// 	const {name, values} = field;
+	// 	const newFieldVals = {...fieldVals};
+	// 	const currFieldVals = fieldVals[name].value;
+	// 	const allFieldValues = values.map(obj => obj.value);
 
-		if (!currFieldVals.length) {
+	// 	if (!currFieldVals.length) {
 
-		} else {
+	// 	} else {
 
-		}
+	// 	}
 
-		setFieldVals(newFieldVals);
-	}
+	// 	setFieldVals(newFieldVals);
+	// }
 
 	const openFilters = () => {
 		setIsOpened(true);
