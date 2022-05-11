@@ -51,15 +51,15 @@ Built using Create React App with aditional dependencies:
 - react-hot-toast - For notifications on saving
 - react-uuid - To create unique ids
 
-### Folder Structure
+### Source Folder Structure
 
-- /assets - Main styles and images
-- /components - React components used in views
-- /data - Has initial bottles data to populate the cellar manager
-- /helpers - Helper functions
-- /layouts - Common layout structure used in both views
-- /pages - Rect components for displaying each view (List and Detail)
-- /store - Get and save bottles as well as app preferences
+- assets - Main styles and images
+- components - React components used in views
+- data - Has initial bottles data to populate the cellar manager
+- helpers - Helper functions
+- layouts - Common layout structure used in both views
+- pages - Rect components for displaying each view (List and Detail)
+- store - Get and save bottles as well as app preferences
 
 
 ### What could be improved?
