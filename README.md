@@ -51,7 +51,7 @@ Built using Create React App with aditional dependencies:
 - react-hot-toast - For notifications on saving
 - react-uuid - To create unique ids
 
-### Source Folder Structure
+### Source folder structure
 
 - assets - Main styles and images
 - components - React components used in views
